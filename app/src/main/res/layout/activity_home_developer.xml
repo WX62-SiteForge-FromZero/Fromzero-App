@@ -60,8 +60,8 @@
         android:id="@+id/body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,122 +90,182 @@
                 android:text="Juan es un desarrollador web con más de 5 años de experiencia en la creación de sitios web y aplicaciones móviles. Apasionado por la tecnología y el diseño, se especializa en el desarrollo frontend y backend, utilizando tecnologías como HTML, CSS, JavaScript, React y Node.js." />
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/pais"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <!-- Línea negra en la parte superior -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/> <!-- Línea negra -->
+
+            <FrameLayout
+                android:id="@+id/pais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:background="@android:color/transparent"> <!-- Sin fondo -->
+
+                <TextView
+                    android:id="@+id/tv_pais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Pais" />
+
+                <TextView
+                    android:id="@+id/tv_pais_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Peru" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- FrameLayout para Teléfono -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_pais"
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/> <!-- Línea negra -->
+
+            <FrameLayout
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="Pais" />
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
 
-            <TextView
-                android:id="@+id/tv_pais_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:text="Peru" />
-        </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono" />
 
-        <FrameLayout
-            android:id="@+id/telefono"
+                <TextView
+                    android:id="@+id/tv_telefono_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="+51 999999999" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- FrameLayout para Correo -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_telefono"
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/> <!-- Línea negra -->
+
+            <FrameLayout
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Teléfono" />
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
 
-            <TextView
-                android:id="@+id/tv_telefono_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:text="+51 999999999" />
-        </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo" />
 
-        <FrameLayout
-            android:id="@+id/correo"
+                <TextView
+                    android:id="@+id/tv_correo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="JuanPerez@hotmail.com" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- FrameLayout para Proyectos -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_correo"
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/> <!-- Línea negra -->
+
+            <FrameLayout
+                android:id="@+id/proyectos"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Correo" />
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
 
-            <TextView
-                android:id="@+id/tv_correo_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:text="JuanPerez@hotmail.com" />
+                <TextView
+                    android:id="@+id/tv_proyectos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proyectos" />
 
-        </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_proyectos_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="99" />
+            </FrameLayout>
+        </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/proyectos"
+        <!-- FrameLayout para Especialidades -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_proyectos"
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/> <!-- Línea negra -->
+
+            <FrameLayout
+                android:id="@+id/especialidades"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Proyectos" />
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
 
-            <TextView
-                android:id="@+id/tv_proyectos_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:text="99" />
-        </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_especialidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidades" />
 
-        <FrameLayout
-            android:id="@+id/especialidades"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp">
-
-            <TextView
-                android:id="@+id/tv_especialidades"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Especialidades" />
-
-            <TextView
-                android:id="@+id/tv_especialidades_title"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="right"
-                android:text="HTML5, CSS, JavaScript" />
-        </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_especialidades_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="HTML5, CSS, JavaScript" />
+            </FrameLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -213,19 +273,21 @@
         android:id="@+id/profile"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <ImageView
             android:id="@+id/img_user"
-            android:layout_width="112dp"
-            android:layout_height="112dp"
-            android:src="@drawable/img" />
-
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/developer_photo" />
 
         <FrameLayout
             android:layout_width="wrap_content"
@@ -237,7 +299,7 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre de usuario"
+                android:text="Juan Fernandez"
                 android:textColor="#60899C"
                 android:textSize="24sp" />
 
@@ -247,7 +309,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:text="proyectos" />
+                android:text="Proyectos" />
         </FrameLayout>
     </FrameLayout>
 

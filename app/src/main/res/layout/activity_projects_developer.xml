@@ -8,9 +8,10 @@
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
-        android:layout_height="19dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="Proyectos Activos"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,18 +66,20 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/content"
-        android:layout_width="0dp"
+        android:layout_width="410dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:paddingTop="32dp"
         android:paddingLeft="32dp"
+        android:paddingTop="32dp"
         android:paddingRight="32dp"
         app:layout_constraintBottom_toTopOf="@+id/navbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_3"
@@ -96,14 +99,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo" />
+
                     <TextView
                         android:id="@+id/tv_title_img3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="152dp"
+                        android:layout_height="57dp"
                         android:layout_marginTop="16dp"
-                        android:text="TextView"
+                        android:text="Plataforma de Comercio Electrónico Geekit"
+                        android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/img_3"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
@@ -111,18 +123,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="TextView"
+                        android:text="Postulacion Activa"
+                        android:textColor="#3F51B5"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/img_3"
+                        app:layout_constraintHorizontal_bias="0.504"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
                         app:layout_constraintTop_toBottomOf="@+id/tv_title_img3" />
 
-                    <ImageView
-                        android:id="@+id/img_3"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/img"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
