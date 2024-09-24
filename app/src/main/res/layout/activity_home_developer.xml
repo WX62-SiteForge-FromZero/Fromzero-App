@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btSearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btTrend"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trend"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile">
+
+        <LinearLayout
+            android:id="@+id/resumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_resumen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Resumen" />
+
+            <TextView
+                android:id="@+id/tv_pais3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Juan es un desarrollador web con más de 5 años de experiencia en la creación de sitios web y aplicaciones móviles. Apasionado por la tecnología y el diseño, se especializa en el desarrollo frontend y backend, utilizando tecnologías como HTML, CSS, JavaScript, React y Node.js." />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/pais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_pais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Pais" />
+
+            <TextView
+                android:id="@+id/tv_pais_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Peru" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono" />
+
+            <TextView
+                android:id="@+id/tv_telefono_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="+51 999999999" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo" />
+
+            <TextView
+                android:id="@+id/tv_correo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="JuanPerez@hotmail.com" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/proyectos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_proyectos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proyectos" />
+
+            <TextView
+                android:id="@+id/tv_proyectos_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="99" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/especialidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_especialidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especialidades" />
+
+            <TextView
+                android:id="@+id/tv_especialidades_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="HTML5, CSS, JavaScript" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:src="@drawable/img" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_gravity="right">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de usuario"
+                android:textColor="#60899C"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bt_proyectos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="proyectos" />
+        </FrameLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
