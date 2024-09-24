@@ -13,6 +13,18 @@
         android:theme="@style/Theme.FromzeroApp"
         tools:targetApi="31">
         <activity
+            android:name=".developer.DeveloperHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".developer.DeveloperProjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".developer.DeveloperScheduleItemViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".developer.DeveloperScheduleView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
